@@ -1,7 +1,5 @@
 # Leadosaurus OAuth Proxy Service
 
-The deployed instance can be accessed through [proxy-pizzly.herokuapp.com](https://proxy-pizzly.herokuapp.com).
-
 This service is meant to be the OAuth bridge between Leadosaurus and other services. Without the need to establish our own infrastructure, Pizzly securely handles the OAuth dance that's often required when working with APIs for server to server interaction.
 
 ## Usage
