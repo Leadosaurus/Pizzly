@@ -8,7 +8,7 @@ describe('Filter connection headers', () => {
       'content-Type': 'application/json',
       connection: 'keep-alive, foo, bar',
       foo: 'abc',
-      'keep-alive': 'timeout=30'
+      'keep-alive': 'timeout=60'
     }
 
     expect(stripHopByHopHeaders(headers)).toMatchSnapshot()
@@ -21,7 +21,7 @@ describe('Filter connection headers', () => {
       'content-Type': 'application/json',
       connection: 'keep-alive, Foo, Bar',
       foo: 'abc',
-      'keep-alive': 'timeout=30',
+      'keep-alive': 'timeout=60',
       ':method': 'GET',
       ':scheme': 'https'
     }

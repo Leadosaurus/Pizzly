@@ -2,7 +2,7 @@ import { buildAxiosRequest } from './helpers'
 
 import axios from 'axios'
 
-const DEFAULT_CLIENT_TIMEOUT = 30 * 1000
+const DEFAULT_CLIENT_TIMEOUT = 60 * 1000
 
 interface IPayload {
   body: any
