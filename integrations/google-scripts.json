@@ -1,0 +1,28 @@
+{
+  "name": "Google Scripts",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_Apps_Script.svg/440px-Google_Apps_Script.svg.png",
+  "auth": {
+    "authorizationURL": "https://accounts.google.com/o/oauth2/v2/auth",
+    "tokenURL": "https://www.googleapis.com/oauth2/v4/token",
+    "authType": "OAUTH2",
+    "tokenParams": {
+      "grant_type": "authorization_code"
+    },
+    "authorizationParams": {
+      "prompt": "consent",
+      "access_type": "offline"
+    },
+    "auth": {
+      "response_type": "code"
+    }
+  },
+  "request": {
+    "baseURL": "https://script.googleapis.com/v1/",
+    "headers": {
+      "Accept": "application/json",
+      "Authorization": "Bearer ${auth.accessToken}",
+      "Content-Type": "application/json",
+      "User-Agent": "Pizzly"
+    }
+  }
+}
